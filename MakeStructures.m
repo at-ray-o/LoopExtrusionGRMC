@@ -1,7 +1,7 @@
 %% Code to compute structures, given loop configurations.
 len = 10000; %1 bead = 1 kbp;
 b = 1;
-rc = sqrt(2);
+rc = 1;
 kBT=1;
 sqrtkBT = sqrt(kBT);
 relLoopStrength = 1;
@@ -12,10 +12,11 @@ nLoopsCond1 = 2550;
 nLoopsCond2 = 343;
 nTimes = 9;
 runMax = 1;
+fileID = fopen('structureTest.xyz','w');
 
 meanEndToendDist = zeros(1,runMax);
 varEndToendDist = zeros(1,runMax);
-fileID = fopen('structureTest.xyz','w');
+
 isLoop = zeros(len,1);
 
 for run=1:runMax
