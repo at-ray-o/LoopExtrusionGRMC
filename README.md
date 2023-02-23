@@ -35,6 +35,23 @@ To perform the calculation setup a directory as shown as below.
 
 Then one can run the code `LoopExtrusionBothCondensins.m` to generate the loop locations.
 
-The `MakeStructures.m` code is responsible for accepting loop location output from the previous code and generating structures. 
+The `MakeStructures.m` code is responsible for accepting loop location output from the previous code and generating structures. The parameters are as follows
+
+```
+len = 10000; %1 bead = 1 kbp;
+b = 1;
+rc = 1;
+kBT=1;
+sqrtkBT = sqrt(kBT);
+relLoopStrength = 1;
+k = 3/b^2*kBT;
+nSamples = 100;
+
+nLoopsCond1 = 2550;
+nLoopsCond2 = 343;
+nTimes = 9;
+runMax = 1;
+fileID = fopen('structureTest.xyz','w');
+```
  
-These two codes can be used to generate any of the results in our paper.
+These two codes can be used to generate any of the results in our paper. Additional codes are placed in the folder named `Additional Codes`
