@@ -16,7 +16,7 @@ residenceTimeRealCond1 = 2*60; %seconds
 residenceTimeRealCond2 = 6*60; %seconds
 nSites = 1000000; %Each monomer is 100 bp
 probSwitch = 1;
-%Condensin II
+
 nCond1Total = 2550;
 nCond1Bound = 1210;
 
@@ -197,7 +197,6 @@ for run = 1:runMax
     %                         if currLoopIndex==9
     %                             disp(t)
     %                             disp([currLoopIndex,currLoopH2,currLoopOri,iBlock,stepSz])
-    %                             input('poop')
     %                         end
                         else
                             disp("here")
@@ -327,7 +326,7 @@ for run = 1:runMax
     %                         if currLoopIndex==9
     %                             disp(t)
     %                             disp([currLoopIndex,currLoopH2,currLoopOri,iBlock,stepSz])
-    %                             input('poop')
+    %                             input('error')
     %                         end
                         else
                             disp("here")
